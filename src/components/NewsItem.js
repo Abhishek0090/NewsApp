@@ -13,7 +13,7 @@ export default class NewsItem extends Component {
             position:'absolute',
             right:0
           }}>
-        <span className="badge rounded-pill bg-danger " style={{left:'90%',zIndex:1}}>
+        <span className="badge rounded-pill bg-danger">
              {source}</span>
           </div>
           <img src={!imageUrl?"https://1721181113.rsc.cdn77.org/data/images/full/34888/science-times-twin-meteor-showers-dont-miss-this-weeks-occurrence-in-the-sky-that-could-produce-fireballs.jpg":imageUrl} className="card-img-top" alt="..." />

@@ -8,7 +8,7 @@ export class Navbar extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
-              NewsVilla
+                NewsVilla
             </Link>
             <button
               className="navbar-toggler"
@@ -68,14 +68,14 @@ export class Navbar extends Component {
                   </Link>
                 </li>
               </ul>
-              <form class="d-flex">
+              <form className="d-flex">
               <input
-                class="form-control me-2"
+                className="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-primary" type="submit">
+              <button className="btn btn-outline-primary" type="submit">
                 Search
               </button>
             </form>
