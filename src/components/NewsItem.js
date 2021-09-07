@@ -5,11 +5,17 @@ export default class NewsItem extends Component {
   render() {
     let { title, description, imageUrl,newsUrl,author,date,source} = this.props; //setting our props
     return (
-      <div className="my-3" style={{width:'100%',
-      overflowX:'hidden'}}>
+      <div className="my-3">
         <div className="card">
-        <span className="position-absolute top-0 translate-middle badge rounded-pill bg-success " style={{left:'90%',zIndex:1}}>
+          <div style={{
+            display:'flex',
+            justifyContent:'flex-end',
+            position:'absolute',
+            right:0
+          }}>
+        <span className="badge rounded-pill bg-danger " style={{left:'90%',zIndex:1}}>
              {source}</span>
+          </div>
           <img src={!imageUrl?"https://1721181113.rsc.cdn77.org/data/images/full/34888/science-times-twin-meteor-showers-dont-miss-this-weeks-occurrence-in-the-sky-that-could-produce-fireballs.jpg":imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
