@@ -3,14 +3,18 @@ import React, { Component } from "react";
 export default class NewsItem extends Component {
     
   render() {
-    let { title, description, imageUrl,newsUrl} = this.props; //setting our props
+    let { title, description, imageUrl,newsUrl,author,date,source} = this.props; //setting our props
     return (
-      <div className="my-3">
+      <div className="my-3" style={{width:'100%',
+      overflowX:'hidden'}}>
         <div className="card">
+        <span className="position-absolute top-0 translate-middle badge rounded-pill bg-success " style={{left:'90%',zIndex:1}}>
+             {source}</span>
           <img src={!imageUrl?"https://1721181113.rsc.cdn77.org/data/images/full/34888/science-times-twin-meteor-showers-dont-miss-this-weeks-occurrence-in-the-sky-that-could-produce-fireballs.jpg":imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
+            <p className="card-text"><small className="text-muted">By {author?author:"unknown"} on {new Date(date).toGMTString()}</small></p>
             <a href={newsUrl} target="_blank" rel="noreferrer" className="btn btn-sm btn-dark">
               Read More
             </a>

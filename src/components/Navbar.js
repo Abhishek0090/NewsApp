@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export class Navbar extends Component {
   render() {
     return (
-      <div>
+      <div >
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
@@ -21,7 +21,7 @@ export class Navbar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div  
+            <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
@@ -31,7 +31,7 @@ export class Navbar extends Component {
                     Home
                   </Link>
                 </li>
-              
+
                 <li className="nav-item">
                   <Link className="nav-link" to="/business">
                     Business
@@ -68,7 +68,19 @@ export class Navbar extends Component {
                   </Link>
                 </li>
               </ul>
+              <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
             </div>
+            
           </div>
         </nav>
       </div>
