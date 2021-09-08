@@ -67,7 +67,7 @@ const News = (props) => {
 
   return (
     <>
-      <h1 className="text-center my-3" style={{ margin: '35px 0px', marginTop: '90px' }}>
+      <h1 className="text-center my-6" style={{margin:'70px 0px',marginBottom:'5px'}}>
         NewsVilla - Top {captializeFirstLetter(props.category)} Headlines
       </h1>
       {loading && <Spinner />}
@@ -90,6 +90,7 @@ const News = (props) => {
                     author={element.author}
                     date={element.publishedAt}
                     source={element.source.name}
+
                   />
                 </div>
               );
