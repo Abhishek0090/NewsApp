@@ -67,7 +67,7 @@ const Navbar = ()=>{
                   </Link>
                 </li>
               </ul>
-              <form className="d-flex">
+              {/* <form className="d-flex">
               <input
                 className="form-control me-2"
                 type="search"
@@ -77,7 +77,7 @@ const Navbar = ()=>{
               <button className="btn btn-outline-primary" type="submit">
                 Search
               </button>
-            </form>
+            </form> */}
             </div>
             
           </div>
